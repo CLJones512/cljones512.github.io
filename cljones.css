@@ -6,6 +6,7 @@ h1 {
     background-color: darkred;
     color: goldenrod;
     width: 33%;
+    text-align: center;
 }
 #container{
     color: blue;
