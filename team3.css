@@ -1,0 +1,26 @@
+body {
+    font-family: sans-serif;
+    background-color: lightsteelblue;
+    background-image: url(https://avante.biz/wp-content/uploads/Creative-Backgrounds-Wallpapers/Creative-Backgrounds-Wallpapers-010.jpg);
+    color: white;
+}
+h1 {
+    background-color: darkred;
+    color: goldenrod;
+}
+h2 {
+    background-color: green;
+    color: white;
+}
+#container{
+    color: blue;
+}
+#header {
+    font-family: 'Copperplate Gothic';
+    width: 33%;
+    text-align: center;
+}
+table, th, td {
+    border: 1px solid white;
+    border-radius: 2px;
+}
