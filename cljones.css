@@ -5,9 +5,16 @@ body {
 h1 {
     background-color: darkred;
     color: goldenrod;
-    width: 33%;
-    text-align: center;
+}
+h2 {
+    background-color: green;
+    color: white;
 }
 #container{
     color: blue;
+}
+#header {
+    font-family: 'Copperplate Gothic';
+    width: 33%;
+    text-align: center;
 }
