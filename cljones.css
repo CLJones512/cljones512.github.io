@@ -3,8 +3,9 @@ body {
     background-color: lightsteelblue;
 }
 h1 {
-    background-color: red;
-    color: white;
+    background-color: darkred;
+    color: goldenrod;
+    width: 33%;
 }
 #container{
     color: blue;
