@@ -3,14 +3,18 @@ body {
     background-color: lightsteelblue;
     background-image: url(https://avante.biz/wp-content/uploads/Creative-Backgrounds-Wallpapers/Creative-Backgrounds-Wallpapers-010.jpg);
     color: white;
+    align-content: center;
 }
 h1 {
     background-color: darkred;
     color: goldenrod;
+    border: 4px solid goldenrod;
+    border-radius: 4px;
 }
 h2 {
     background-color: green;
     color: white;
+    border: 4px solid white;
 }
 #container{
     color: blueviolet;
