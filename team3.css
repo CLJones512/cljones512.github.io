@@ -3,6 +3,7 @@ body {
     background-color: lightsteelblue;
     background-image: url(https://avante.biz/wp-content/uploads/Creative-Backgrounds-Wallpapers/Creative-Backgrounds-Wallpapers-010.jpg);
     color: white;
+    align-items: center;
 }
 h1 {
     align-items: center;
@@ -28,4 +29,11 @@ h2 {
 table, th, td {
     border: 1px solid white;
     border-radius: 2px;
+}
+#siteBody{
+    align-items: center;
+    background-color: black;
+    color: white;
+    border: 4px solid white;
+    border-radius: 4px;
 }
