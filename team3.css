@@ -7,13 +7,14 @@ body {
 }
 h1 {
     align-items: center;
-    background-color: darkred;
+    text-decoration-color: aquamarine;
+    background-color: thistle;
     color: goldenrod;
     border: 4px solid goldenrod;
     border-radius: 4px;
 }
 h2 {
-    background-color: green;
+    background-color: purple;
     color: white;
     border: 4px solid white;
     border-radius: 4px;
@@ -39,3 +40,43 @@ table, th, td {
     width: 33%;
     text-align: center;
 }
+<!-- this is where my styling starts -Yohanna (Kisanet) -->
+
+ul, li  { border: 4px solid olivedrab;
+    background-color: pink;
+    width: 20%;
+
+} 
+ 
+div {
+  border: 5px solid burlywood;
+  padding: 8px;
+  width: 50%
+}
+
+h1 {
+  text-align: center;
+  width: 50%;
+  text-transform: uppercase;
+  color: blue;
+}
+
+p {
+  text-indent: 100px;
+  width: 90%;
+  text-align: justify;
+  letter-spacing: 1px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+a {
+  text-decoration: none;
+  color: pink;
+}
+.cities {
+    background-color: yellow;
+    color: purple;
+    margin: 20px;
+    padding: 20px;
+  }
+
