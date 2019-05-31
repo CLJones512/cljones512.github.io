@@ -88,8 +88,8 @@ img {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    /*background-color: darkblue;*/
-    background-color: seagreen;
+    background-color: darkblue;
+    /*background-color: seagreen;*/
     border: 5px solid white;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
 }
