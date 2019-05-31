@@ -1,14 +1,49 @@
 <html>
     <head>
         <title>Javascript test</title>
+        <script src = "JS Test.js"></script>
     </head>
     <body>
+        <p>Convert Feet to Meters</p>
+        <input id = "fToM">
+        <button id = "button" style = "vertical-align: middle" onclick = "convertFeet()"><span>Convert</span></button>
+        <p>Convert Fahrenheit to Celisus</p>
+        <input id = "fToC">
+        <button onclick = "convertTemp()">Convert</button>
+        <p>Convert Fluid Ounces to Milliliters</p>
+        <input id = "ozToMl">
+        <button onclick = "convertVolume()">Convert</button>
+        <p>Convert Pounds to Kilograms</p>
+        <input id = "lbToKg">
+        <button onclick = "convertWeight()">Convert</button>
+        <p id = "output1"></p>
+        <p id = "output2"></p>
+        <p id = "output3"></p>
+        <p id = "output4"></p>
         <script>
-            var i;
-            for (i = 1; i >= 10; i++)
+            function convertFeet()
             {
-                document.getElementByID("demo").innerHTML = i;
+                var a = document.getElementById("fToM").value;
+                var b = a / 3.281;
+                document.getElementById("output1").innerHTML = a + " feet = " + b + " meters";
+            }
+            function convertTemp()
+            {
+                var a = document.getElementById("fToC").value;
+                var b = (a - 32) * (5 / 9);
+                document.getElementById("output2").innerHTML = a + " degrees fahrenheit = " + b + " degrees Celsius";
+            }
+            function convertVolume()
+            {
+                var a = document.getElementById("ozToMl").value;
+                var b = a * 29.574;
+                document.getElementById("output3").innerHTML = a + " fl oz = " + b + " milliliters";
+            }
+            function convertWeight()
+            {
+            var a = document.getElementById("lbToKg").value;
+            var b = a / 2.205;
+            document.getElementById("output4").innerHTML = a + " pounds = " + b + " kilograms";
             }
         </script>
-        <p id="demo"></p> 
     </body>

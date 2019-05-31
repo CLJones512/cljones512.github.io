@@ -1,0 +1,132 @@
+body {
+    background-image: url(black-background_00313351.jpg);
+    font-family: sans-serif;
+    color: white;
+    background-color: black;
+}
+p {
+    color:white;
+    font-family:Tahoma;
+}
+h1 {
+    background-color:darkblue;
+    /*background-color: seagreen;*/
+    color:white;
+    font-family:'Copperplate Gothic';
+    text-align:center;
+    border: 4px solid white;
+    border-radius: 4px;
+    box-shadow:rgba(0,0,0,0.4) 5px 5px 5px;
+    text-shadow: 2px 2px 5px black;
+    width: 20%;
+}
+h2 {
+    color:white;
+    font-family:'Copperplate Gothic';
+    text-align:center;
+}
+h3 {
+   text-align: center;
+}
+img {
+    height: 100px;
+    width: 100px;
+}
+.button {
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: darkblue;
+    /*background-color: seagreen;*/
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    border: 4px solid white;
+    box-shadow: rgba(0,0,0,0.4) 5px 5px 5px;
+    text-shadow: 2px 2px 5px black;
+    vertical-align: middle;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.1s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+#container13 {
+    width: 200px;
+    height: 500px;
+    background-color: darkblue;
+}
+#navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /*background-color: darkblue;*/
+    background-color: seagreen;
+    border: 5px solid white;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+}
+#nvbrbtn {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    text-shadow: 5px 5px 5px black;
+    /*background-color: cornflowerblue;*/
+    /*background-color:darkgreen;*/
+}
+.active {
+    background-color: black;
+    cursor: default;
+}
+.active:hover {
+    background-color: black;
+}
+#home {
+    float: left;
+}
+#container {
+    background-color: darkblue;
+    color: white;
+    font-family: sans-serif;
+    border: 5px solid white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+    width: 33%;
+    margin-left: 34%;
+    padding: 4px 4px;
+}
+

@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Number guessing game</title>
+    </head>
+    <body>
+        <p>I'm thinking of a number between 1 and 100. You have 7 tries to guess it</p>
+        <input id = "input">
+        <button onclick="randNum()">Submit</button>
+        <p id = "output"></p>
+        <script>
+        function guessNum(a)
+        {
+            for(b = 0; b < 7; b++)
+            {
+                var c = document.getElementById("input").value;
+                if(c > a)
+                {
+                    document.getElementById("output").innerHTML = "Too high! Guess again!";
+                }
+                else if(c < a)
+                {
+                    document.getElementById("output").innerHTML = "Too low! Guess again!";
+                }
+                else
+                {
+                    document.getElementById("output").innerHTML = "You guessed correctly!";
+                }
+            }
+            document.getElementById("output").innerHTML = "You have run out of attempts. The number I was thinking of is " + a;
+        }
+        function randNum()
+        {
+            var a = Math.floor(Math.random() * 100) + 1;
+            guessNum(a);
+        }
+        </script>
+    </body>
+</html>
