@@ -51,13 +51,29 @@
             {
                 var a = document.getElementById("ozToMl").value;
                 var b = a * 29.574;
-                document.getElementById("output3").innerHTML = a + " fl oz = " + b + " milliliters";
+                if (b > 1000)
+                {
+                    b /= 1000;
+                    document.getElementById("output3").innerHTML = a + "fl oz =" + b + " liters";
+                }
+                else
+                {
+                    document.getElementById("output3").innerHTML = a + " fl oz = " + b + " milliliters";
+                }
             }
             function convertWeight()
             {
             var a = document.getElementById("lbToKg").value;
             var b = a / 2.205;
-            document.getElementById("output4").innerHTML = a + " pounds = " + b + " kilograms";
+                if (b < 1)
+                {
+                    b /= 1000;
+                    document.getElementById("output4").innerHTML = a + " pounds = " + b + " grams";
+                }
+                else
+                {
+                    document.getElementById("output4").innerHTML = a + " pounds = " + b + " kilograms";
+                }
             }
         </script>
     </body>
