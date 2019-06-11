@@ -14,5 +14,7 @@ function convertVolume(a)
   document.getElementById("output").innerHTML = a + " fl oz = " + b + " milliliters";
 }
 function convertWeight(a)
+{
   var b = a / 2.205;
   document.getElementById("output").innerHTML = a + " pounds = " + b + " kilograms";
+}

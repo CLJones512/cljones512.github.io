@@ -1,0 +1,64 @@
+<html>
+    <!--Colin's section, part A-->
+    <head>
+        <title>Unit Conerter - Imperial to Metric</title>
+        <link rel = "stylesheet" type = "text/css" href = "JS Demo.css">
+    </head>
+    <body>
+        <p>Convert from Feet</p>
+        <input id = "fToM">
+        <button id = "button" style = "vertical-align: middle" onclick = "convertFeet()"><span>Convert</span></button>
+        <p>Convert Fahrenheit to Celisus</p>
+        <input id = "fToC">
+        <button onclick = "convertTemp()">Convert</button>
+        <p>Convert from Fluid Ounces</p>
+        <input id = "ozToMl">
+        <button onclick = "convertVolume()">Convert</button>
+        <p>Convert from Pounds</p>
+        <input id = "lbToKg">
+        <button onclick = "convertWeight()">Convert</button>
+        <p id = "output1"></p>
+        <p id = "output2"></p>
+        <p id = "output3"></p>
+        <p id = "output4"></p>
+        <button onclick = "location.href = 'metricToImperial.html'">Convert from metric units</button>
+        <button onclick = "location.href = 'JS Demo.html'">Go back home</button>
+        <script>
+            function convertFeet()
+            {
+                var a = document.getElementById("fToM").value;
+                var b = a / 3.281;
+                if (b < 1 && b > 0.01)
+                {
+                    b *= 100;
+                    document.getElementById("output1").innerHTML = a + " feet = " + b + " centimeters";
+                }
+                else if (b < 0.01)
+                {
+                    b *= 1000;
+                    document.getElementById("output1").innerHTML = a + " feet = " + b + " millimeters";
+                }
+                else
+                    document.getElementById("output1").innerHTML = a + " feet = " + b + " meters";
+            }
+            function convertTemp()
+            {
+                var a = document.getElementById("fToC").value;
+                var b = (a - 32) * (5 / 9);
+                document.getElementById("output2").innerHTML = a + " degrees fahrenheit = " + b + " degrees Celsius";
+            }
+            function convertVolume()
+            {
+                var a = document.getElementById("ozToMl").value;
+                var b = a * 29.574;
+                document.getElementById("output3").innerHTML = a + " fl oz = " + b + " milliliters";
+            }
+            function convertWeight()
+            {
+            var a = document.getElementById("lbToKg").value;
+            var b = a / 2.205;
+            document.getElementById("output4").innerHTML = a + " pounds = " + b + " kilograms";
+            }
+        </script>
+    </body>
+</html>

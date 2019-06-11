@@ -1,0 +1,73 @@
+<html>
+<!--Yohanna's Section-->
+<!--<body style="background-color:royalblue;">-->
+<head>
+  <link rel = "stylesheet" type = "text/css" href = "JS Demo.css">
+</head>
+  <body>
+  <h1 style = "text-align: center"> Welcome to my Javascript Webpage</h1>
+
+
+<h3> Variables</h3>
+<p>In this example, x, y, and z are variables.</p>
+
+<p id="demo"></p>
+
+<script>
+var x = 10;
+var y = 10;
+var z = x + y;
+document.getElementById("demo").innerHTML =
+"The value of z is: " + z;
+
+</script>
+
+
+<h3>This is an array of the different locations the University of Washington has! </h3>
+<p id="output2"></p>
+
+<script>
+var schools = ["UW SEATTLE", "UW BOTHELL", "UW TACOMA"];
+document.getElementById("output2").innerHTML = schools;
+
+</script>
+<h3> When you click on the button you will get an appropiate greeting depending on the time of day :)</h3>
+<p>Click the button to get a time-based greeting:</p>
+        
+<button onclick="myFunction()"> Click here! </button>
+
+<p id="output3"></p>
+
+<script>
+function myFunction() {
+  var greeting;
+  var time = new Date().getHours();
+  if (time < 10) {
+    greeting = "Good morning";
+  } else if (time < 20) {
+    greeting = "I hope you have a great day";
+  } else {
+    greeting = "I hope you have a great evening";
+  }
+  document.getElementById("output3").innerHTML = greeting;
+}
+</script>
+
+<h3> More math! </h3>
+<p>x = 5, y = 2, calculate z = x + y, and display z:</p>
+
+<p id="output6"></p>
+
+<script>
+var x = 5;
+var y = 2;
+var z = x + y;
+document.getElementById("output6").innerHTML = z;
+</script>
+<button onclick = "location.href = 'JS Demo.html'">Go back home</button>
+
+
+</body>
+
+</html>
+
